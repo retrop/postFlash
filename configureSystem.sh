@@ -11,9 +11,9 @@ gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-ama
     'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', \
     'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
 
-sudo apt-get install chromium-browser -y
+# sudo apt-get install chromium-browser -y
 sudo apt-get install git -y
-sudo apt-get install aptitude -y
+# sudo apt-get install aptitude -y
 
 # Add script to run at maximum performance
 sudo cp maxPerformance.sh /usr/local/bin
@@ -24,5 +24,5 @@ sudo sed -i 's/usb_port_owner_info=0/usb_port_owner_info=2/' /boot/extlinux/extl
 # Disable USB autosuspend
 sudo sed -i '$s/$/ usbcore.autosuspend=-1/'  /boot/extlinux/extlinux.conf
 # /bin/ required for echo to work correctly in /bin/sh file
-/bin/echo -e "\e[1;32mPlease reboot for changes to take effect.\e[0m"
+# /bin/echo -e "\e[1;32mPlease reboot for changes to take effect.\e[0m"
 
